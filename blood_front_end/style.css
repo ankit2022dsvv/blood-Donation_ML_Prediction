@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+/*Root*/
+;root {
+  background-color: red;
+  --box_shadow: 10px 10px 10px -10px rgba(0,0,0,0.6) inset 10px 10px 10px -10px
+  rgba(0,0,0,0.9);
+
+}
+
+* {
+  font-family: "Besley",serif;
+}
+*::selection{
+  background: red;
+  color: #000;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.btn{
+  background-color: #dc3545; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+.btn:hover {
+  background-color: #c82333; 
+}
+
+.btn-link {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: red;
+}
+
+::-webkit-scrollbar-track{
+  background:#000;
+}
+.Heading{
+  text-align: center;
+  margin: 50px auto;
+}
+.Heading h6{
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+}
+.Heading p{
+  font-size: 12px;
+}
+
+/*Navbar/Header Section Start*/
+.navbarMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+  
+}
+
+.navbar-brand {
+  color: var(--main)!important;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.navbarMain h6{
+  padding: 10px;
+  font-weight: 800;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #000;
+  padding: 5px;
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-link {
+  color: #fff !important;
+}
+.nav-link:hover {
+  color: #fff !important;
+}
+.fancy-text {
+  font-family: 'Arial Black', sans-serif; 
+  font-size: 1.2em; 
+  color: #ff0000; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust the value to lessen the space between nav-items */
+}
+
+/*Navbar/Header Section end*/
+
+/*Home section start*/
+  .Home{
+    height: 80vh;
+    width: 100%;
+    background: url(images/home.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .Home .row::before{
+    content: "";
+    display:flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,#000, transparent) ;
+  }
+  .Home .col-sm-7{
+    padding: 30px;
+    color: #fff;
+    position: relative;
+  }
+  .Home .col-sm-7 h6{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .Home .col-sm-7 h5{
+    font-size: 100px;
+    font-weight: 800;
+  }
+  .Home .col-sm-7 p{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+/*Home section end*/
+
+/*Donation Process Section Start*/
+.DonationProcess{
+  margin: 150px auto;
+}
+.DonationProcess .Heading p{
+  font-size: 16px;
+}
+.DonationProcess .box{
+  position: relative;
+  overflow: hidden;
+}
+.DonationProcess .box:hover img{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.DonationProcess .box img{
+  height: 200px;
+  width: 100%;
+}
+.DonationProcess .box h6{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  background: red;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 20px;
+}
+.DonationProcess .boxContent{
+  background: #ccc;
+  padding: 20px ;
+  height:250px;
+}
+.DonationProcess .boxContent h6{
+  font-size: 30px;
+  font-weight: 800;
+}
+.DonationProcess .boxContent p{
+  font-size: 14px;
+}
+/*Donation Process Section Start*/
+
+/*Why us section start*/
+  .whyus{
+    margin-bottom: 150px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(images/whyus.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    color:#fff;
+
+  }
+  .whyus .col-sm-8 h6{
+    font-size: 50px;
+    color: red;
+    margin: 50px;
+    font-weight: 800;
+  }
+  .whyus .col-sm-8 p{
+    font-size: 18px;
+  }
+/*Why us section end*/
+
+/*Team Members Section Start*/
+
+.TeamMembers .box {
+  background: #b7b1b3;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px; /* Adjust the value to change the curvature */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow */
+}
+
+
+.TeamMembers .box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid transparent; /* Initially, set border color to transparent */
+  box-shadow: 0 0 0 2px #007bff, 0 0 20px rgba(0, 123, 255, 0.4); /* Add a stylish border and shadow */
+  transition: all 0.3s ease; /* Add smooth transition for hover effect */
+}
+.TeamMembers .box:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.05); /* Add slight scale effect on hover */
+}
+
+.TeamMembers p{
+  font-size: 20px;
+}
+
+.TeamMembers .box img:hover {
+  border-color: #007bff; /* Change border color on hover */
+  transform: scale(1.05); /* Add slight scale effect on hover */
+}
+
+
+.TeamMembers .boxContent h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* CSS for Icons */
+.TeamMembers .box .boxContent .Icons {
+  margin-top: 10px; /* Adjust spacing between name and icons */
+}
+
+.TeamMembers .box .boxContent .Icons a {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.TeamMembers .box .boxContent .Icons img {
+  width: 30px; /* Set the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the icons circular */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+/* CSS for Hover Effect */
+.TeamMembers .box .boxContent .Icons img:hover {
+  transform: scale(1.1); /* Scale up the icon on hover */
+}
+/*Team Members section End*/
+
+/* Footer Section CSS */
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h5 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  padding-left: 0;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #fff;
+}
+
+.feedback-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.footer hr {
+  border-top-color: #555;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+.footer .fas.fa-heart {
+  color: #dc3545;
+}
+
+.Appointment{
+  margin-bottom: 150px;
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(images/book.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Appointment form {
+  box-shadow: var(--box_shadow);
+  padding: 20px;
+}
+
+.Appointment form h4{
+  background: red !important;
+  color:#fff;
+  font-size: 40px;
+  text-align: center;
+  padding: 4px;
+}
+.Appointment form input, .Appointment form textarea{
+  background: none !important;
+  color: #fff !important;
+}
+.Appointment form textarea::placeholder{
+  color:#fff !important;
+}
+
+.Appointment form textarea{
+  resize:none !important;
+  height: 10rem !important;
+}
+
+

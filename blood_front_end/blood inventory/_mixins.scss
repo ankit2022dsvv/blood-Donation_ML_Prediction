@@ -1,0 +1,12 @@
+@mixin BoxShadow(){
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin ButtonStyles($backgroundcolor,$fontcolor)
+{
+    border:none;
+    background-color: $backgroundcolor;
+    color:$fontcolor;
+    padding: 15px 15px;
+    cursor:pointer;
+}

@@ -1,0 +1,278 @@
+body {
+  background-image:url(https://www.bloodbankonline.org/images/Tue2014_BackgroundBokeh_3.jpg);
+}
+
+body .navbar {
+  -webkit-box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+          background: -webkit-linear-gradient(bottom,  #080808,  #8A0303);
+  height: 70px;
+}
+
+body .navbar .companylogo {
+  padding: 5px 0 5px 10%;
+}
+
+body .container {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+body .container .getquotetext {
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+body .container .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .blocks p {
+  opacity: 0.7;
+}
+
+body .container .blocks .left, body .container .blocks .right {
+  background-color: #fff;
+  width: 100%;
+}
+
+body .container .blocks .left {
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+body .container .blocks .left .triptype {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .blocks .left .triptype > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .container .blocks .left .one-way-button {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #700404;
+  color: #fff;
+  padding: 15px 15px;
+  cursor: text;
+  text-align: center;
+}
+
+body .container .blocks .left .round-trip-button {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #fff;
+  color: #000;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+body .container .blocks .left .date-input-container {
+  width: 100%;
+}
+
+body .container .blocks .left .date-input-container i {
+  position: absolute;
+}
+
+body .container .blocks .left .date-icon {
+  padding: 20px;
+  z-index: 1;
+}
+
+body .container .blocks .left .date-input-field {
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  padding-left: 55px;
+}
+
+body .container .blocks .left .fas {
+  color: #2348AF;
+  margin-right: 18px;
+  font-size: 20px;
+}
+
+body .container .blocks .left .select {
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body .container .blocks .left .select .selectBtn {
+  background: var(--bg1);
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #fff;
+}
+
+body .container .blocks .left .select .selectBtn::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+body .container .blocks .left .select .selectBtn .toggle {
+  border-radius: 3px 3px 0 0;
+}
+
+body .container .blocks .left .select .selectBtn .toggle::after {
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+          transform: translateY(-50%) rotate(-135deg);
+}
+
+body .container .blocks .left .select .selectDropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  background: var(--bg1);
+  border-top: 1px solid #eee;
+  z-index: 1;
+  background: #fff;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  visibility: hidden;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body .container .blocks .left .select .selectDropdown .option {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+body .container .blocks .left .select .selectDropdown .option:hover {
+  background: #f8f8f8;
+}
+
+body .container .blocks .left .select .toggle {
+  visibility: visible;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+body .container .blocks .right {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body .container .blocks .right table {
+  padding: 20px;
+  text-align: left;
+}
+
+body .container .blocks .right table th {
+  opacity: 0.7;
+}
+
+body .container .blocks .right table td {
+  opacity: 0.6;
+}
+
+body .container .blocks .right .trip-detail-container {
+  padding: 30px;
+  padding-top: 0;
+}
+
+body .container .blocks .right .trip-detail-title, body .container .blocks .right .total-price {
+  color: #2348AF;
+  opacity: 0.7;
+}
+
+body .container .blocks .right table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 1.5em;
+}
+
+body .container .blocks .right tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .blocks .right hr {
+  opacity: 0.3;
+}
+
+body .container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+body .container .buttons button {
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #700404;
+  color: #ffffff;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 989px) {
+  .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

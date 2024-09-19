@@ -1,0 +1,224 @@
+@import 'mixins';
+@import 'vars';
+
+body{
+    background: #F0EDED;
+    .navbar{
+        box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+        background-color: $primary-color;
+        height:70px;
+
+        .companylogo
+        {
+            padding: 5px 0 5px 10%;
+            
+        }
+    }
+    .container
+    {
+        width:75%;
+        margin:auto;
+        margin-bottom: 30px;
+      
+        .getquotetext
+        {
+            font-weight: normal;
+            opacity:0.8;
+        }
+        
+        .blocks {
+            display: flex;
+            p{
+                opacity: 0.7;
+            }
+            .left,.right{
+                background-color: #fff;
+                width:100%;
+               
+            }
+            .left
+            {
+                margin-right:20px;
+                background-color: transparent;
+             
+                .triptype
+                {
+                    width:100%;
+                    display:flex;
+                    > * { flex: 1; }
+                }
+                .one-way-button
+                {
+                    @include BoxShadow();
+                    @include ButtonStyles($primary-color,#fff);
+                }
+                .round-trip-button
+                {
+                    @include BoxShadow();
+                    @include ButtonStyles(#fff,#000);
+                }
+                .date-input-container{
+                    
+                    width: 100%;
+                    i {
+                        position: absolute;
+                    }
+                    
+                }
+                .date-icon {
+                    padding: 20px;
+                    z-index:1;
+                }
+                
+                .date-input-field {
+                    border:none;
+                    box-sizing: border-box;
+                    width: 100%;
+                    @include BoxShadow();
+                    padding: 20px;
+                    text-align: left;
+                    padding-left:55px;
+                }
+               
+                .fas
+                {
+                    color:$primary-color;
+                    margin-right:18px;
+                    font-size:20px;
+                }
+                .select {
+                    position: relative;
+                    margin-bottom: 15px;
+                    @include BoxShadow();
+                    .selectBtn {
+                        background: var(--bg1);
+                        padding: 20px;
+                        box-sizing: border-box;
+                        border-radius: 3px;
+                        width: 100%;
+                        cursor: pointer;
+                        position: relative;
+                        -webkit-user-select: none;
+                           -moz-user-select: none;
+                            -ms-user-select: none;
+                                user-select: none;
+                        background: #fff;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 45%;
+                            right: 15px;
+                            width: 6px;
+                            height: 6px;
+                            transform: translateY(-50%) rotate(45deg);
+                            border-right: 2px solid #666;
+                            border-bottom: 2px solid #666;
+                            transition: 0.2s ease;
+                        }
+                        .toggle {
+                            border-radius: 3px 3px 0 0;
+                            &::after {
+                                transform: translateY(-50%) rotate(-135deg);
+                              }
+                          }
+                      }
+                      .selectDropdown {
+                        position: absolute;
+                        top: 100%;
+                        width: 100%;
+                        border-radius: 0 0 3px 3px;
+                        overflow: hidden;
+                        background: var(--bg1);
+                        border-top: 1px solid #eee;
+                        z-index: 1;
+                        background: #fff;
+                        transform: scale(1, 0);
+                        transform-origin: top center;
+                        visibility: hidden;
+                        transition: 0.2s ease;
+                        @include BoxShadow();
+                        .option {
+                            padding: 10px;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            &:hover {
+                                background: #f8f8f8;
+                              }
+                          }
+                      }
+                      .toggle {
+                        visibility: visible;
+                        transform: scale(1, 1);
+                      }
+                }
+            }
+            .right{
+                
+                @include BoxShadow();
+                table{
+                    padding:20px;
+                    text-align: left;
+                    th
+                    {
+                        opacity: 0.7;
+                    }
+                    td{
+                        opacity: 0.6;
+                    }
+                };
+                .trip-detail-container
+                {
+                    padding: 30px;
+                    padding-top: 0;
+                }
+                .trip-detail-title,.total-price
+                {
+                    color:$primary-color;
+                    opacity: 0.7;
+                }
+                table
+                {
+                    margin:0;
+                    padding:0;
+                    width:100%;
+                    line-height: 1.5em; 
+                }
+                tr
+                {
+                    display:flex;
+                    justify-content: space-between;
+                }
+                hr
+                {
+                    opacity: 0.3;
+                }
+                
+              
+            }
+        }    
+       .buttons
+       {
+           display:flex;
+           justify-content: space-between;
+           margin-top:20px;
+       
+           button{
+               @include BoxShadow();
+                @include ButtonStyles($primary-color,#ffffff);
+            }
+       }
+    }       
+}
+
+@media screen and (max-width:989px)
+{
+    
+    .blocks{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+  

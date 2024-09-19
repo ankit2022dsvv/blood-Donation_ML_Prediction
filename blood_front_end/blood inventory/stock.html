@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Quote</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="./stock.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <img src=""></div>
+</div>
+<div class="container">
+<h3 class="getquotetext">Blood Stock Availability</h3>
+    
+    <div class="blocks">
+    <!-- partial:index.partial.html -->
+        <div class="left">
+            <div class="triptype">
+                <div class="one-way-button">Search Blood Stock</div>
+                
+            </div>
+            
+            <p>Select State</p>
+            <input type="text" id="districtInput" placeholder="Enter District">
+            
+            <p>Blood Groups</p>
+            <input type="text" id="bloodGroupInput" placeholder="Enter Blood Group">
+        </div>
+    
+        <!-- API FETCH AREA  -->
+        <div class="right">
+            
+            <div class="trip-detail-container">
+                <div class="one-way-container">
+                    <h3 class="trip-detail-title"></h3>
+                    
+                </div>
+                <hr>
+                <div class="two-way-container">
+                    <h3 class="trip-detail-title"></h3>
+                    
+                </div>
+                <hr>
+                <div class="price-container">
+                    <h3 class="trip-detail-title"></h3>
+                    
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="wrong" style="forced-color-adjust:  #080808;">
+        <input type="checkbox">Government Blood
+    <input type="checkbox">Other Blood Banks
+    </div>
+    <div class="buttons">
+        
+        <button type="button">Search</button>
+    </div>
+</div>
+<!-- partial -->
+  <script  src="./stock.js"></script>
+</body>
+</html>

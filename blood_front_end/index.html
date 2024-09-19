@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Link font awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!--Link bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--Link style css-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Link JavaScript-->
+  <script src="submit.js" defer></script>
+
+  <title>Home - रक्त Bank</title>
+  <style>
+    /* Additional CSS for the video */
+    .header-video {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      height: 100px; /* Adjust height as needed */
+    }
+    
+    .header-video video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    .navbarMain {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!--Header with Video Section Start-->
+  <div class="header-video">
+    <video autoplay loop muted>
+      <source src="heartline.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="navbarMain">
+      <a href="index.html" class="navbar-brand">रक्त<span class="fancy-text"> Bank</span></a>
+      <div>
+       <a href="/weblab/admin.html" target="_blank" ><button class="btn">Admin Login</button></a>
+        
+      </div>
+    </div>
+  </div>
+  <!--Header with Video Section End-->
+  
+
+
+ <!--Navbar/Header Section Start-->
+<nav class="navbar navbar-expand justify-content-start"> <!-- Added justify-content-start class -->
+  <ul class="navbar-nav">
+    <li class="nav-item"><a href="#home-section" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="#donation-process-section" class="nav-link">Donation Process</a></li>
+    <li class="nav-item"><a href="/blood inventory/stock.html" target="_blank" class="nav-link">Looking for Blood</a></li>
+    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+    
+  </ul>
+</nav>
+<!--Navbar/Header Section end-->
+
+
+
+  <!--Home section start-->
+  <section id="home-section">
+    <div class="Home">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h6>Donate Blood, Give the Gift of Life</h6>
+            <h5>Become a Life-Giver!</h5>
+            <p>
+              In a world where heroes come in all forms, you have the power to unleash the hero within 
+              you. By answering the call to donate blood, you can become a true life-giver.
+              Your selfless 
+              act holds the extraordinary ability to save lives, restore hope, and bring solace to those
+              in need. 
+            </p>
+            <button class="btn"><a href="./Multi steps form/signup.html" target="_blank" class="btn-link">Donate now</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Home section end-->
+  <!--Donation Process Section Start-->
+  <section id="donation-process-section" class="DonationProcess container">
+    <div class="Heading">
+      <h6>Donation process</h6>
+      <p>
+        Your generous contribution can make a significant impact and help save lives in need.
+      </p>
+    </div>
+
+    <div class="row">
+    <div class="col-sm-3">
+      <div class="box">
+        <img src="images/donationProcess1.jpg"
+        class="img-fluid" alt="">
+        <h6>1</h6>
+      </div>
+      <div class="boxContent">
+        <h6>Eligibility Check</h6>
+        <p>
+          Ensure you meet the requirements for blood donation, including being in good health, meeting age and weights criteria, and not having certain medical conditions or engaging in high-risk behaviours.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="box">
+        <img src="images/donationProcess2.jpg"
+        class="img-fluid" alt="">
+        <h6>2</h6>
+      </div>
+      <div class="boxContent">
+        <h6>Register and Screen</h6>
+        <p>
+          Sign up as a donor and go through a screening process, which includes a confidential interview to assess your health, travel history, and potential risk factors for transmitting infections.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="box">
+        <img src="images/donationProcess3.jpg"
+        class="img-fluid" alt="">
+        <h6>3</h6>
+      </div>
+      <div class="boxContent">
+        <h6>Donate Blood</h6>
+        <p>
+          Undergo the blood donation process where a healthcare professional will collect a pint of blood through a sterile needle inserted into your vein. The procedure takes around 10-15 minutes and you should remain relax and avoid excessive movement.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="box">
+        <img src="images/donationProcess4.jpg"
+        class="img-fluid" alt="">
+        <h6>4</h6>
+      </div>
+      <div class="boxContent">
+        <h6>Disease Prediction</h6>
+        <p>
+          After donating blood, receive a detailed report on your blood composition and health. Predictive analysis assesses risks for hepatitis, anaemia, heart and lung diseases, diabetes and many more.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <!--Donation Process Section end-->
+  <!--Why us section start-->
+  <section class="whyus">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-sm-8">
+          <h6>
+            Why us ?
+          </h6>
+          <p>
+            At our blood donation platform, we offer a unique fusion of compassion and cutting-edge technology, redefining the act of giving. Our approach revolves around utilizing advanced machine learning algorithms to analyze donated blood samples, providing personalized disease predictions based on laboratory reports. This proactive strategy empowers donors with early insights into their health status, allowing them to take preemptive measures for their well-being. We believe in the power of early detection for better health management, whether it involves genetic predispositions or lifestyle-related factors. By identifying risks at an early stage, we facilitate more effective interventions and improved health outcomes for individuals. Moreover, our initiative extends beyond individual benefits to contribute to the overall health of the community. Through encouraging regular blood donation and facilitating disease prediction, we aspire to foster a healthier society where everyone can thrive. With a user-friendly interface and a commitment to confidentiality, we prioritize the seamless experience of our donors while ensuring the privacy of their information. Ultimately, we aim to empower donors to make a meaningful difference not only through blood donation but also by advocating for proactive health management and community well-being. 
+          </p>
+          <button class="btn"><a href="./Multi steps form/signup.html" target="_blank" class="btn-link">Join us in our mission to save lives, promote health, and build a brighter future for all</a></button>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!--Why us section end-->
+
+  <section class="info">
+    <img src="images/proto.png" class="img-fluid" alt="">
+  </section>
+  
+
+
+<!-- Footer Section Start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="#donation-process-section">Donation Process</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Reviews & Sharing Experience</h5>
+        <p>Share your experience or leave a review below:</p>
+        <form id="feedback-form" class="feedback-form">
+          <div class="input-group mb-3">
+            <textarea id="review-text" class="form-control" rows="3" placeholder="Your review or experience"></textarea>
+          </div>
+          <button id="submit-review" class="btn btn-outline-secondary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2024 रक्त Bank. All rights reserved.</p>
+        <p>Designed <i class="fas fa-heart text-danger"></i> by रक्त Bank Team </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+</body>
+</html>
